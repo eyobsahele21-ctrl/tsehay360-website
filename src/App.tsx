@@ -270,37 +270,36 @@ export default function App() {
   ];
 
   // Poster Grid assets
-  const posters = [
-    {
-      id: "p1",
-      url: "/src/assets/images/regenerated_image_1783335239196.jpg",
-      alt: "Amibara Properties Campaign",
-      tag: "REAL ESTATE",
-      label: "Amibara Properties"
-    },
-    {
-      id: "p2",
-      url: "/src/assets/images/regenerated_image_1783335248367.jpg",
-      alt: "Enat Dairy Milk Campaign",
-      tag: "FOOD & BEVERAGE",
-      label: "Enat Milk"
-    },
-    {
-      id: "p3",
-      url: "/src/assets/images/regenerated_image_1783335249599.jpg",
-      alt: "Beylul Speciality Dental Clinic Campaign",
-      tag: "HEALTHCARE",
-      label: "Beylul Speciality Dental Clinic"
-    },
-    {
-      id: "p4",
-      url: "/src/assets/images/regenerated_image_1783335257824.jpg",
-      alt: "Ethio Security System Campaign",
-      tag: "SECURITY & SURVEILLANCE",
-      label: "Ethio Security System"
-    }
-  ];
-
+const posters = [
+  {
+    id: "p1",
+    url: "/AMIBARA.jpg",
+    alt: "Amibara Properties Campaign",
+    tag: "REAL ESTATE",
+    label: "Amibara Properties"
+  },
+  {
+    id: "p2",
+    url: "/secure.jpg",
+    alt: "Campaign Image",
+    tag: "MARKETING",
+    label: "Current Campaign"
+  },
+  {
+    id: "p3",
+    url: "/Beyilul.jpg",
+    alt: "Beylul Speciality Dental Clinic Campaign",
+    tag: "HEALTHCARE",
+    label: "Beylul Speciality Dental Clinic"
+  },
+  {
+    id: "p4",
+    url: "/ess.jpg",
+    alt: "Ethio Security System Campaign",
+    tag: "SECURITY & SURVEILLANCE",
+    label: "Ethio Security System"
+  }
+];
   // Filter campaigns
   const filteredCampaigns = campaigns.filter(
     (c) => portfolioFilter === "all" || c.category === portfolioFilter
