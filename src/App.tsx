@@ -1723,15 +1723,7 @@ const posters = [
               <div className="mt-4 text-center">
                 <p className="font-label-caps text-xs text-solar-orange font-bold">
                   HIGH-CONTRAST VECTOR SPECIFICATION
-                </p>
-                <p className="font-body text-[11px] text-slate-muted mt-1">
-                  Click outside or escape to close. Styled for print & digital billboard output.
-                </p>
-              </div>
-            </motion.div>
-          </div>
-        )}
-      </AnimatePresence>
+                <
     </div>
   );
 }
