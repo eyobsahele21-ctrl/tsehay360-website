@@ -1,0 +1,6 @@
+{
+  "name": "Tsehay 360",
+  "description": "A radiant digital agency landing page featuring glassmorphic designs, three-dimensional glowing sun visualizations, custom portfolios, and direct client partner workflows.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

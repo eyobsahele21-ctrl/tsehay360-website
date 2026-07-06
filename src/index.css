@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Raleway:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&family=Abyssinica+SIL&display=swap');
+
+@theme {
+  --color-brand-blue: #3268BA;
+  --color-solar-orange: #F9B03C;
+  --color-deep-void: #000000;
+  --color-slate-muted: #4B5563;
+  --color-surface-dim: #121414;
+  --color-on-surface-variant: #d6c4af;
+  --color-primary-container: #f9b03c;
+  --color-on-primary-container: #6b4500;
+  --color-surface-container-lowest: #0c0f0f;
+  --color-surface-container-highest: #333535;
+  --color-on-surface: #e2e2e2;
+  --color-primary-fixed: #ffddb3;
+  --color-primary-fixed-dim: #ffb950;
+  --color-secondary-container: #014c9c;
+
+  --font-display: "Montserrat", sans-serif;
+  --font-headline: "Montserrat", sans-serif;
+  --font-subtitle: "Raleway", sans-serif;
+  --font-body: "Roboto", sans-serif;
+  --font-accent: "Raleway", sans-serif;
+  --font-amharic: "Abyssinica SIL", serif;
+  --font-label-caps: "Raleway", sans-serif;
+}
+
+body {
+  background: #000000;
+  color: #ffffff;
+  font-family: var(--font-body);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-glow {
+  background: radial-gradient(circle at 70% 30%, #3268BA 0%, transparent 60%);
+}
+
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 0 0 rgba(249, 176, 60, 0.4); }
+  70% { box-shadow: 0 0 0 20px rgba(249, 176, 60, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(249, 176, 60, 0); }
+}
+
+.cta-pulse {
+  animation: pulse-glow 2s infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1deg); }
+}
+
+.parallax-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes secondary-pulse-glow {
+  0% { box-shadow: 0 0 0 0 rgba(50, 104, 186, 0.4); }
+  70% { box-shadow: 0 0 0 20px rgba(50, 104, 186, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(50, 104, 186, 0); }
+}
+
+.secondary-cta-pulse {
+  animation: secondary-pulse-glow 2s infinite;
+  animation-delay: 1s;
+}
+
+.secondary-cta-pulse:hover {
+  animation-play-state: paused;
+  opacity: 1 !important;
+  transform: scale(1.05) !important;
+  box-shadow: 0 0 15px rgba(50, 104, 186, 0.4) !important;
+  border-color: rgba(50, 104, 186, 0.6) !important;
+}
+
+@keyframes megaTextPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.95;
+  }
+  100% {
+    transform: scale(1.015);
+    opacity: 1;
+  }
+}
+
+.mega-footer-cta {
+  font-size: clamp(3rem, 6vw, 8rem);
+  line-height: 1.1;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  animation: megaTextPulse 4s infinite alternate ease-in-out;
+}
+
+.mega-footer-cta:hover {
+  animation-play-state: paused;
+  color: #F9B03C !important;
+  text-shadow: 0 0 30px rgba(249, 176, 60, 0.6), 0 0 60px rgba(249, 176, 60, 0.3);
+  transform: scale(1.03);
+}
+
+/* Arrow transition */
+.mega-footer-arrow {
+  display: inline-block;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mega-footer-cta:hover .mega-footer-arrow {
+  transform: translate(20px, -20px) scale(1.2);
+}
+
+@keyframes premiumSheen {
+  0% {
+    left: -120%;
+  }
+  40%, 100% {
+    left: 120%;
+  }
+}
+
+@keyframes borderGlowPulse {
+  0% {
+    box-shadow: 0 0 10px rgba(249, 176, 60, 0.2), 0 0 0 1px rgba(249, 176, 60, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(249, 176, 60, 0.55), 0 0 0 2.5px rgba(249, 176, 60, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(249, 176, 60, 0.2), 0 0 0 1px rgba(249, 176, 60, 0.3);
+  }
+}
+
+.premium-sheen-button {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.premium-sheen-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 60%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.45) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-30deg);
+  left: -120%;
+  animation: premiumSheen 4s infinite cubic-bezier(0.25, 1, 0.5, 1);
+  pointer-events: none;
+}
+
+.premium-sheen-button:hover {
+  animation: borderGlowPulse 1.8s infinite ease-in-out;
+  border-color: #F9B03C !important;
+}
+
+
