@@ -611,12 +611,17 @@ const posters = [
                 
                 <div className="p-3 glass-panel rounded-3xl transition-transform duration-700 shadow-2xl shadow-brand-blue/10 group relative overflow-visible z-10">
                   <div className="relative overflow-hidden rounded-2xl">
-                   <img
-  src="/111.JPG"
-  alt="Founder Portrait"
-  className="w-full h-full object-cover rounded-2xl shadow-2xl"
-/>
-                    
+                   <motion.div
+  className="relative w-[280px] h-[380px] md:w-[320px] md:h-[450px] lg:w-[350px] lg:h-[500px] bg-white/10 rounded-[2rem] overflow-hidden border border-white/20 shadow-2xl"
+  style={{ perspective: 1000 }}
+>
+  <img
+    src="/111.JPG"
+    alt="Founder Portrait"
+    className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-110"
+  />
+  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+</motion.div>
 
                   </div>
 
