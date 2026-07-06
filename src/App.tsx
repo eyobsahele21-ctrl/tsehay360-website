@@ -543,7 +543,6 @@ const posters = [
                 </div>
               </motion.div>
             </div>
-
             {/* Right Visuals (SunOrb & Founder Portrait) */}
             <div className="lg:col-span-6 relative flex flex-col justify-center items-center h-[500px] md:h-[600px] lg:h-[700px] w-full">
               {/* Three.js SunOrb Visualization in Background */}
@@ -618,7 +617,7 @@ const posters = [
   style={{ perspective: 1000 }}
 <motion.div
   className="relative w-[280px] h-[380px] md:w-[320px] md:h-[450px] lg:w-[350px] lg:h-[500px] bg-white/10 rounded-[2rem] overflow-hidden border border-white/20 shadow-2xl group cursor-pointer"
->
+<motion.div 
   <img
     src="/111.JPG"
     alt="Founder Portrait"
