@@ -614,12 +614,18 @@ const posters = [
                    <motion.div
   className="relative w-[280px] h-[380px] md:w-[320px] md:h-[450px] lg:w-[350px] lg:h-[500px] bg-white/10 rounded-[2rem] overflow-hidden border border-white/20 shadow-2xl"
   style={{ perspective: 1000 }}
+<motion.div
+  className="relative w-[280px] h-[380px] md:w-[320px] md:h-[450px] lg:w-[350px] lg:h-[500px] bg-white/10 rounded-[2rem] overflow-hidden border border-white/20 shadow-2xl group cursor-pointer"
 >
   <img
     src="/111.JPG"
     alt="Founder Portrait"
-    className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-110"
+    className="w-full h-full object-cover object-center grayscale group-hover:grayscale-0 transition-all duration-1000 ease-in-out transform group-hover:scale-105"
   />
+  
+  {/* ከላይ የሚቀመጥ ስስ ጥላ (Overlay) */}
+  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 group-hover:opacity-20 transition-opacity duration-1000"></div>
+</motion.div>
   <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
 </motion.div>
 
