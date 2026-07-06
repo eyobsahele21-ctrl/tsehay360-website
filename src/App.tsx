@@ -611,12 +611,11 @@ const posters = [
                 
                 <div className="p-3 glass-panel rounded-3xl transition-transform duration-700 shadow-2xl shadow-brand-blue/10 group relative overflow-visible z-10">
                   <div className="relative overflow-hidden rounded-2xl">
-                    <img
-                      alt="Founder Portrait"
-                      className="w-60 h-72 md:w-72 md:h-[400px] object-cover rounded-2xl grayscale group-hover:grayscale-0 transition-all duration-700 border border-white/10"
-                      src={founderPhoto}
-                      referrerPolicy="no-referrer"
-                    />
+                   <img
+  src="/111.JPG"
+  alt="Founder Portrait"
+  className="w-full h-full object-cover rounded-2xl shadow-2xl"
+/>
                     
 
                   </div>
