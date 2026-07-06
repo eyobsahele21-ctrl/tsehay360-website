@@ -1720,10 +1720,6 @@ const posters = [
                 />
               </div>
 
-              <div className="mt-4 text-center">
-                <p className="font-label-caps text-xs text-solar-orange font-bold">
-                  HIGH-CONTRAST VECTOR SPECIFICATION
-                <
-    </div>
+             
   );
 }
