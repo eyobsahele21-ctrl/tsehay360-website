@@ -269,7 +269,7 @@ export default function App() {
     }
   ];
 
-  // Poster Grid assets
+ // Poster Grid assets
 const posters = [
   {
     id: "p1",
@@ -280,10 +280,10 @@ const posters = [
   },
   {
     id: "p2",
-    url: "/secure.jpg",
-    alt: "Campaign Image",
-    tag: "MARKETING",
-    label: "Current Campaign"
+    url: "/ENAT.jpg", // እዚህ ጋር ነው ስህተቱ የነበረው፣ አሁን አስተካክለነዋል
+    alt: "Enat Dairy Milk Campaign",
+    tag: "FOOD & BEVERAGE",
+    label: "Enat Milk"
   },
   {
     id: "p3",
