@@ -459,12 +459,10 @@ const posters = [
           className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden hero-glow"
           id="hero"
         >
-          <section className="w-full min-h-screen relative overflow-hidden px-4 md:px-10">
-  {/* እዚህ ጋር max-w-7xl ካለ አጥፋው */}
-  <div className="flex flex-col lg:flex-row items-center justify-between">
-     ...
-  </div>
-</section>
+          <div className="container mx-auto px-6 md:px-12 lg:px-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center max-w-7xl">
+            {/* Left Narrative */}
+            <div className="lg:col-span-6 z-10 flex flex-col justify-center">
+
               
               <motion.h1
                 initial={{ opacity: 0 }}
@@ -1722,6 +1720,10 @@ const posters = [
                 />
               </div>
 
-             
+              <div className="mt-4 text-center">
+                <p className="font-label-caps text-xs text-solar-orange font-bold">
+                  HIGH-CONTRAST VECTOR SPECIFICATION
+                <
+    </div>
   );
 }
