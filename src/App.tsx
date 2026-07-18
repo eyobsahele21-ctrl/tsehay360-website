@@ -628,9 +628,9 @@ const posters = [
                   <div className="absolute -bottom-6 -right-6 p-5 glass-panel rounded-2xl border-solar-orange/30 shadow-xl max-w-[200px] backdrop-blur-2xl z-30">
                     <span className="font-label-caps text-[10px] text-solar-orange font-bold block mb-1">
                       FOUNDER
-                    </span>
                     <span className="font-headline text-lg font-bold text-white block">
-                      Visionary
+  Eyoub Sahle
+</span>
                     </span>
                     <span className="font-body text-xs text-on-surface-variant block mt-1 opacity-80">
                       Guiding digital excellence across Ethiopia and beyond.
