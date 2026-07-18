@@ -633,8 +633,8 @@ const posters = [
 </span>
                     </span>
                     <span className="font-body text-xs text-on-surface-variant block mt-1 opacity-80">
-                      Guiding digital excellence across Ethiopia and beyond.
-                    </span>
+  Helping brands grow through innovative 360° marketing.
+</span>
                   </div>
                 </div>
               </motion.div>
