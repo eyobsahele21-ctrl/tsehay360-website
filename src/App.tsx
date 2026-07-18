@@ -459,12 +459,10 @@ const posters = [
           className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden hero-glow"
           id="hero"
         >
-          <section className="w-full min-h-screen relative overflow-hidden px-4 md:px-10">
-  {/* እዚህ ጋር max-w-7xl ካለ አጥፋው */}
-  <div className="flex flex-col lg:flex-row items-center justify-between">
-     ...
-  </div>
-</section>
+          <div className="container mx-auto px-6 md:px-12 lg:px-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center max-w-7xl">
+            {/* Left Narrative */}
+            <div className="lg:col-span-6 z-10 flex flex-col justify-center">
+
               
               <motion.h1
                 initial={{ opacity: 0 }}
@@ -613,23 +611,12 @@ const posters = [
                 
                 <div className="p-3 glass-panel rounded-3xl transition-transform duration-700 shadow-2xl shadow-brand-blue/10 group relative overflow-visible z-10">
                   <div className="relative overflow-hidden rounded-2xl">
-                   <motion.div
-  className="relative w-[280px] h-[380px] md:w-[320px] md:h-[450px] lg:w-[350px] lg:h-[500px] bg-white/10 rounded-[2rem] overflow-hidden border border-white/20 shadow-2xl"
-  style={{ perspective: 1000 }}
-<motion.div
-  className="relative w-[280px] h-[380px] md:w-[320px] md:h-[450px] lg:w-[350px] lg:h-[500px] bg-white/10 rounded-[2rem] overflow-hidden border border-white/20 shadow-2xl group cursor-pointer"
->
-  <img
-    src="/111.JPG"
-    alt="Founder Portrait"
-    className="w-full h-full object-cover object-center grayscale group-hover:grayscale-0 transition-all duration-1000 ease-in-out transform group-hover:scale-105"
-  />
-  
-  {/* ከላይ የሚቀመጥ ስስ ጥላ (Overlay) */}
-  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 group-hover:opacity-20 transition-opacity duration-1000"></div>
-</motion.div>
-  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-</motion.div>
+                   <img
+  src="/111.JPG"
+  alt="Founder Portrait"
+  className="w-full h-full object-cover rounded-2xl shadow-2xl"
+/>
+                    
 
                   </div>
 
@@ -1722,6 +1709,18 @@ const posters = [
                 />
               </div>
 
-             
+              <div className="mt-4 text-center">
+                <p className="font-label-caps text-xs text-solar-orange font-bold">
+                  HIGH-CONTRAST VECTOR SPECIFICATION
+                </p>
+                <p className="font-body text-[11px] text-slate-muted mt-1">
+                  Click outside or escape to close. Styled for print & digital billboard output.
+                </p>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+    </div>
   );
 }
